@@ -20,7 +20,7 @@ namespace Vistian.Reactive.Proxy.EventHandlers.Snapshot.Local
 
         public long ErrorCount { get; set; }
 
-        public State(Mode mode)
+        public State(Mode mode=Mode.All)
         {
             _mode = mode;
 
