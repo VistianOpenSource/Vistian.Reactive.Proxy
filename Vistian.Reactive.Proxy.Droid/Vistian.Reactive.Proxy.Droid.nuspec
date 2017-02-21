@@ -13,8 +13,10 @@
       <dependency id="Rx-Main" version="2.2.5" />
     </dependencies>
   </metadata>
+  <files>
   <file src="bin\$BuildConfiguration$\Vistian.Reactive.Proxy.Droid.dll" target="lib\monoandroid70\"/>
   <file src="bin\$BuildConfiguration$\Vistian.Reactive.Proxy.Droid.pdb" target="lib\monoandroid70\"/>
   <file src="bin\$BuildConfiguration$\Vistian.Reactive.Proxy.Core.dll" target="lib\monoandroid70\"/>
   <file src="bin\$BuildConfiguration$\Vistian.Reactive.Proxy.Core.pdb" target="lib\monoandroid70\"/>
+  </files>
 </package>
