@@ -17,7 +17,7 @@ During the development cycle, it can be difficult to diagnose the behaviour of s
 
 ## How do i use it?
 
-1. Install the pre-release nuget package , Vistian.Reactive.Proxy.Droid from the myget feed https://www.myget.org/F/vistian-ci/api/v2/package .
+1. Install the **pre-release** nuget package , Vistian.Reactive.Proxy.Droid from the MyGet feed https://www.myget.org/F/vistian-ci/api/v3/index.json 
 2. At the start of the world in your application, add the code to create your 'event handlers' and install the proxy:
 
 ```
@@ -30,7 +30,7 @@ var stateHandler = new Vistian.Reactive.Proxy.EventHandlers.Snapshot.Local.Handl
 // create error handler
 var errorHandler = new Vistian.Reactive.Proxy.EventHandlers.Exceptions.Handler(sessionState);
 
-// setup event to receive exception events.
+// setup event handler to receive exception events.
 errorHandler.ErrorRaised += ErrorHandler_ErrorRaised;
 
 // create aggregate container for exceptions
@@ -98,6 +98,7 @@ It should be relatively easy to create ones own handlers, e.g. console output fo
 1. This code hasn't had a lot of testing.
 2. Memory consumption on Android of this library hasn't been tested.
 3. Performance of solutions will be effected with this library, don't deploy it in a live solution.
+4. The code is a work in progress and should be seen as such. Functionality, along with class naming will more than likely evolve.
 
 
 
